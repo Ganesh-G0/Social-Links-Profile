@@ -1,0 +1,103 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+@font-face {
+  font-family: 'InterBold';
+  src: url(./assets/fonts/static/Inter-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'InterRegular';
+  src: url(./assets/fonts/static/Inter-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'InterSemiBold';
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--offBlack);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 350px;
+  border-radius: 2rem;
+  background-color: var(--darkGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main > p {
+  color: lightgray;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: 'InterRegular', sans-serif;
+}
+.hero {
+  gap: 2rem;
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero > img {
+  border-radius: 50%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.hero-text > h1 {
+  font-family: 'InterBold', sans-serif;
+  font-size: 2.4rem;
+}
+.hero-text > p {
+  margin-top: .5rem;
+  font-size: 1.4rem;
+  color: var(--green);
+  font-family: 'InterBold', sans-serif;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;  
+  margin-bottom: 1rem;
+  cursor: black;
+}
+.social-link {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  margin: 0 2rem;
+  border-radius: .7rem;
+  color: var(--white);
+  background-color: var(--grey);
+  text-decoration: none;
+  font-family: 'InterSemiBold', sans-serif;  
+  cursor: url('./assets/images/icons8-cursor-30.png'), auto;
+}
+.social-link:hover {
+  color: var(--offBlack);
+  background-color: var(--green);
+  font-weight: 900;
+}
